@@ -22,6 +22,8 @@ class YLDanTangViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNav()
+        weak var weakSelf = self
 
         // Do any additional setup after loading the view.
     }
@@ -31,7 +33,13 @@ class YLDanTangViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+  
+    func setupNav(){
+        //不要自动调整Inset
+        automaticallyAdjustsScrollViewInsets = false
+        let contentView = UIScrollView()
+        contentView.frame = view.bounds
+    }
     /*
     // MARK: - Navigation
 
