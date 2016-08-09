@@ -33,12 +33,22 @@ class YLDanTangViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-  
+    /**
+     设置导航栏
+     */
     func setupNav(){
-        //不要自动调整Inset
-        automaticallyAdjustsScrollViewInsets = false
-        let contentView = UIScrollView()
-        contentView.frame = view.bounds
+//        //不要自动调整Inset
+//        automaticallyAdjustsScrollViewInsets = false
+//        let contentView = UIScrollView()
+//        contentView.frame = view.bounds
+        view.backgroundColor = UIColor.whiteColor()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Feed_SearchBtn_18x18_"), style: .Plain, target: self, action: #selector(seachButtonAction))
+        
+    }
+    func seachButtonAction(){
+        let searchBarVC = YLSearchViewController()
+        self.navigationController?.pushViewController(searchBarVC, animated: true)
+        
     }
     /*
     // MARK: - Navigation

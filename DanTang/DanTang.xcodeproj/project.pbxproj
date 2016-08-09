@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		113841521D586ED900DDB71A /* YLChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113841511D586ED900DDB71A /* YLChannel.swift */; };
 		116EB7571D5311E000A6357B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EB7561D5311E000A6357B /* AppDelegate.swift */; };
-		116EB7591D5311E000A6357B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EB7581D5311E000A6357B /* BaseViewController.swift */; };
 		116EB75C1D5311E000A6357B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116EB75A1D5311E000A6357B /* Main.storyboard */; };
 		116EB75E1D5311E000A6357B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 116EB75D1D5311E000A6357B /* Assets.xcassets */; };
 		116EB7611D5311E000A6357B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116EB75F1D5311E000A6357B /* LaunchScreen.storyboard */; };
@@ -21,6 +20,8 @@
 		11A7F2151D5426DC00C1CCAB /* YLNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A7F2141D5426DC00C1CCAB /* YLNavigationController.swift */; };
 		11A7F21B1D5467A400C1CCAB /* YLConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A7F21A1D5467A400C1CCAB /* YLConst.swift */; };
 		11A7F21D1D54786700C1CCAB /* YLNewfeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A7F21C1D54786700C1CCAB /* YLNewfeatureViewController.swift */; };
+		11CB75F11D5962C800BD46C3 /* YLBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CB75F01D5962C800BD46C3 /* YLBaseViewController.swift */; };
+		11CB75F31D59630E00BD46C3 /* YLSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CB75F21D59630E00BD46C3 /* YLSearchViewController.swift */; };
 		D52DFDCE15FFAF55C3A9028D /* Pods_DanTang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C839BF22D648DDDEB8545225 /* Pods_DanTang.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +30,6 @@
 		113841511D586ED900DDB71A /* YLChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLChannel.swift; sourceTree = "<group>"; };
 		116EB7531D5311E000A6357B /* DanTang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanTang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		116EB7561D5311E000A6357B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		116EB7581D5311E000A6357B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		116EB75B1D5311E000A6357B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		116EB75D1D5311E000A6357B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		116EB7601D5311E000A6357B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +42,8 @@
 		11A7F2141D5426DC00C1CCAB /* YLNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLNavigationController.swift; sourceTree = "<group>"; };
 		11A7F21A1D5467A400C1CCAB /* YLConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLConst.swift; sourceTree = "<group>"; };
 		11A7F21C1D54786700C1CCAB /* YLNewfeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLNewfeatureViewController.swift; sourceTree = "<group>"; };
+		11CB75F01D5962C800BD46C3 /* YLBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLBaseViewController.swift; sourceTree = "<group>"; };
+		11CB75F21D59630E00BD46C3 /* YLSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLSearchViewController.swift; sourceTree = "<group>"; };
 		92261A270FB9A9ACAC02B7CE /* Pods-DanTang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanTang.release.xcconfig"; path = "Pods/Target Support Files/Pods-DanTang/Pods-DanTang.release.xcconfig"; sourceTree = "<group>"; };
 		C839BF22D648DDDEB8545225 /* Pods_DanTang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DanTang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				11A7F20A1D532C5F00C1CCAB /* YLDanTangViewController.swift */,
+				11CB75F21D59630E00BD46C3 /* YLSearchViewController.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -124,11 +127,11 @@
 		11A7F1FD1D53214200C1CCAB /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				116EB7581D5311E000A6357B /* BaseViewController.swift */,
 				11A7F2041D53275E00C1CCAB /* YLTabBarController.swift */,
 				11A7F2141D5426DC00C1CCAB /* YLNavigationController.swift */,
 				11A7F21A1D5467A400C1CCAB /* YLConst.swift */,
 				11A7F21C1D54786700C1CCAB /* YLNewfeatureViewController.swift */,
+				11CB75F01D5962C800BD46C3 /* YLBaseViewController.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -344,9 +347,10 @@
 				11A7F2151D5426DC00C1CCAB /* YLNavigationController.swift in Sources */,
 				11A7F2111D532CBB00C1CCAB /* YLMeViewController.swift in Sources */,
 				11A7F21D1D54786700C1CCAB /* YLNewfeatureViewController.swift in Sources */,
-				116EB7591D5311E000A6357B /* BaseViewController.swift in Sources */,
 				11A7F20B1D532C5F00C1CCAB /* YLDanTangViewController.swift in Sources */,
 				116EB7571D5311E000A6357B /* AppDelegate.swift in Sources */,
+				11CB75F31D59630E00BD46C3 /* YLSearchViewController.swift in Sources */,
+				11CB75F11D5962C800BD46C3 /* YLBaseViewController.swift in Sources */,
 				113841521D586ED900DDB71A /* YLChannel.swift in Sources */,
 				11A7F21B1D5467A400C1CCAB /* YLConst.swift in Sources */,
 				11A7F20F1D532CA300C1CCAB /* YLProductViewController.swift in Sources */,
