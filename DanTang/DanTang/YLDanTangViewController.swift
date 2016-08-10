@@ -24,6 +24,11 @@ class YLDanTangViewController: UIViewController {
         super.viewDidLoad()
         setupNav()
         weak var weakSelf = self
+        YLNetWorkingTool.shareNetWorkTool.loadHomeTopData  { (ym_channels) in
+            for channel in ym_channels {
+               
+            }
+        }
 
         // Do any additional setup after loading the view.
     }

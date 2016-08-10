@@ -22,6 +22,9 @@
 		11A7F21D1D54786700C1CCAB /* YLNewfeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A7F21C1D54786700C1CCAB /* YLNewfeatureViewController.swift */; };
 		11CB75F11D5962C800BD46C3 /* YLBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CB75F01D5962C800BD46C3 /* YLBaseViewController.swift */; };
 		11CB75F31D59630E00BD46C3 /* YLSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CB75F21D59630E00BD46C3 /* YLSearchViewController.swift */; };
+		11CB75F51D5AC54F00BD46C3 /* YLNetWorkingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CB75F41D5AC54F00BD46C3 /* YLNetWorkingTool.swift */; };
+		11CB75F71D5AC94200BD46C3 /* YLHomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CB75F61D5AC94200BD46C3 /* YLHomeItem.swift */; };
+		11CB75F91D5AD30500BD46C3 /* YLTopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CB75F81D5AD30500BD46C3 /* YLTopicViewController.swift */; };
 		D52DFDCE15FFAF55C3A9028D /* Pods_DanTang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C839BF22D648DDDEB8545225 /* Pods_DanTang.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +47,9 @@
 		11A7F21C1D54786700C1CCAB /* YLNewfeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLNewfeatureViewController.swift; sourceTree = "<group>"; };
 		11CB75F01D5962C800BD46C3 /* YLBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLBaseViewController.swift; sourceTree = "<group>"; };
 		11CB75F21D59630E00BD46C3 /* YLSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLSearchViewController.swift; sourceTree = "<group>"; };
+		11CB75F41D5AC54F00BD46C3 /* YLNetWorkingTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLNetWorkingTool.swift; sourceTree = "<group>"; };
+		11CB75F61D5AC94200BD46C3 /* YLHomeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLHomeItem.swift; sourceTree = "<group>"; };
+		11CB75F81D5AD30500BD46C3 /* YLTopicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLTopicViewController.swift; sourceTree = "<group>"; };
 		92261A270FB9A9ACAC02B7CE /* Pods-DanTang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanTang.release.xcconfig"; path = "Pods/Target Support Files/Pods-DanTang/Pods-DanTang.release.xcconfig"; sourceTree = "<group>"; };
 		C839BF22D648DDDEB8545225 /* Pods_DanTang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DanTang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -65,6 +71,7 @@
 			children = (
 				11A7F20A1D532C5F00C1CCAB /* YLDanTangViewController.swift */,
 				11CB75F21D59630E00BD46C3 /* YLSearchViewController.swift */,
+				11CB75F81D5AD30500BD46C3 /* YLTopicViewController.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -73,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				113841511D586ED900DDB71A /* YLChannel.swift */,
+				11CB75F61D5AC94200BD46C3 /* YLHomeItem.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -156,6 +164,7 @@
 		11A7F2001D5321B900C1CCAB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				11CB75F41D5AC54F00BD46C3 /* YLNetWorkingTool.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -346,13 +355,16 @@
 			files = (
 				11A7F2151D5426DC00C1CCAB /* YLNavigationController.swift in Sources */,
 				11A7F2111D532CBB00C1CCAB /* YLMeViewController.swift in Sources */,
+				11CB75F71D5AC94200BD46C3 /* YLHomeItem.swift in Sources */,
 				11A7F21D1D54786700C1CCAB /* YLNewfeatureViewController.swift in Sources */,
+				11CB75F51D5AC54F00BD46C3 /* YLNetWorkingTool.swift in Sources */,
 				11A7F20B1D532C5F00C1CCAB /* YLDanTangViewController.swift in Sources */,
 				116EB7571D5311E000A6357B /* AppDelegate.swift in Sources */,
 				11CB75F31D59630E00BD46C3 /* YLSearchViewController.swift in Sources */,
 				11CB75F11D5962C800BD46C3 /* YLBaseViewController.swift in Sources */,
 				113841521D586ED900DDB71A /* YLChannel.swift in Sources */,
 				11A7F21B1D5467A400C1CCAB /* YLConst.swift in Sources */,
+				11CB75F91D5AD30500BD46C3 /* YLTopicViewController.swift in Sources */,
 				11A7F20F1D532CA300C1CCAB /* YLProductViewController.swift in Sources */,
 				11A7F2051D53275E00C1CCAB /* YLTabBarController.swift in Sources */,
 				11A7F20D1D532C8500C1CCAB /* YLCategoryViewController.swift in Sources */,
