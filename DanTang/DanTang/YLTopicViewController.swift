@@ -8,16 +8,42 @@
 
 import UIKit
 
+let homeCellID = "homeCellID"
+
+
 class YLTopicViewController: UITableViewController {
+    var type = Int()
+    
+    //首页列表数据
+    var items = [YLHomeItem]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+
+        view.backgroundColor = YMGlobalColor()
+        setupTableView()
+        
+        
+    
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    func setupTableView() {
+        tableView.rowHeight = 160
+        tableView.separatorStyle = .None
+        tableView.contentInset = UIEdgeInsetsMake(kTitlesViewY+kTitlesViewH, 0, tabBarController!.tabBar.height, 0)
+        tableView.scrollIndicatorInsets = tableView.contentInset
+        let nib = UINib(nibName: String(YLHomeCell), bundle: nil)
+        tableView.registerNib(nib, forCellReuseIdentifier: homeCellID)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

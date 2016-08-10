@@ -25,6 +25,9 @@
 		11CB75F51D5AC54F00BD46C3 /* YLNetWorkingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CB75F41D5AC54F00BD46C3 /* YLNetWorkingTool.swift */; };
 		11CB75F71D5AC94200BD46C3 /* YLHomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CB75F61D5AC94200BD46C3 /* YLHomeItem.swift */; };
 		11CB75F91D5AD30500BD46C3 /* YLTopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CB75F81D5AD30500BD46C3 /* YLTopicViewController.swift */; };
+		11CB75FB1D5AF91000BD46C3 /* UIview+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CB75FA1D5AF91000BD46C3 /* UIview+Extension.swift */; };
+		11CB75FD1D5AFE7C00BD46C3 /* YLHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CB75FC1D5AFE7C00BD46C3 /* YLHomeCell.swift */; };
+		11CB76031D5B05FA00BD46C3 /* YLHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11CB76021D5B05FA00BD46C3 /* YLHomeCell.xib */; };
 		D52DFDCE15FFAF55C3A9028D /* Pods_DanTang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C839BF22D648DDDEB8545225 /* Pods_DanTang.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +53,9 @@
 		11CB75F41D5AC54F00BD46C3 /* YLNetWorkingTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLNetWorkingTool.swift; sourceTree = "<group>"; };
 		11CB75F61D5AC94200BD46C3 /* YLHomeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLHomeItem.swift; sourceTree = "<group>"; };
 		11CB75F81D5AD30500BD46C3 /* YLTopicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLTopicViewController.swift; sourceTree = "<group>"; };
+		11CB75FA1D5AF91000BD46C3 /* UIview+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIview+Extension.swift"; sourceTree = "<group>"; };
+		11CB75FC1D5AFE7C00BD46C3 /* YLHomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLHomeCell.swift; sourceTree = "<group>"; };
+		11CB76021D5B05FA00BD46C3 /* YLHomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLHomeCell.xib; sourceTree = "<group>"; };
 		92261A270FB9A9ACAC02B7CE /* Pods-DanTang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanTang.release.xcconfig"; path = "Pods/Target Support Files/Pods-DanTang/Pods-DanTang.release.xcconfig"; sourceTree = "<group>"; };
 		C839BF22D648DDDEB8545225 /* Pods_DanTang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DanTang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -88,6 +94,8 @@
 		113841501D586E9600DDB71A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				11CB75FC1D5AFE7C00BD46C3 /* YLHomeCell.swift */,
+				11CB76021D5B05FA00BD46C3 /* YLHomeCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -157,6 +165,7 @@
 		11A7F1FF1D5321AC00C1CCAB /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				11CB75FA1D5AF91000BD46C3 /* UIview+Extension.swift */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -293,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				116EB7611D5311E000A6357B /* LaunchScreen.storyboard in Resources */,
+				11CB76031D5B05FA00BD46C3 /* YLHomeCell.xib in Resources */,
 				116EB75E1D5311E000A6357B /* Assets.xcassets in Resources */,
 				116EB75C1D5311E000A6357B /* Main.storyboard in Resources */,
 			);
@@ -355,6 +365,7 @@
 			files = (
 				11A7F2151D5426DC00C1CCAB /* YLNavigationController.swift in Sources */,
 				11A7F2111D532CBB00C1CCAB /* YLMeViewController.swift in Sources */,
+				11CB75FB1D5AF91000BD46C3 /* UIview+Extension.swift in Sources */,
 				11CB75F71D5AC94200BD46C3 /* YLHomeItem.swift in Sources */,
 				11A7F21D1D54786700C1CCAB /* YLNewfeatureViewController.swift in Sources */,
 				11CB75F51D5AC54F00BD46C3 /* YLNetWorkingTool.swift in Sources */,
@@ -367,6 +378,7 @@
 				11CB75F91D5AD30500BD46C3 /* YLTopicViewController.swift in Sources */,
 				11A7F20F1D532CA300C1CCAB /* YLProductViewController.swift in Sources */,
 				11A7F2051D53275E00C1CCAB /* YLTabBarController.swift in Sources */,
+				11CB75FD1D5AFE7C00BD46C3 /* YLHomeCell.swift in Sources */,
 				11A7F20D1D532C8500C1CCAB /* YLCategoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
