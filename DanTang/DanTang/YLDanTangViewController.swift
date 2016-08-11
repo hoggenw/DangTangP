@@ -26,13 +26,27 @@ class YLDanTangViewController: UIViewController {
         weak var weakSelf = self
         YLNetWorkingTool.shareNetWorkTool.loadHomeTopData  { (ym_channels) in
             for channel in ym_channels {
-               
+                let vc = YLTopicViewController()
+                vc.title = channel.name!
+                vc.type = channel.channelId!
+                weakSelf!.addChildViewController(vc)
             }
+            weakSelf!.setupTitlesView()
         }
 
         // Do any additional setup after loading the view.
     }
 
+    /**
+     顶部标签栏
+     */
+    func setupTitlesView() {
+        let bgView = UIView()
+        bgView.frame = CGRectMake(0, kTitlesViewY, SCREENW, kTitlesViewH)
+        view.addSubview(bgView)
+        // 标签
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
