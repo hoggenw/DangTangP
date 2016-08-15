@@ -22,8 +22,10 @@ class YLDanTangViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //设置导航栏
         setupNav()
         weak var weakSelf = self
+        //获取首页顶部选择数据
         YLNetWorkingTool.shareNetWorkTool.loadHomeTopData  { (ym_channels) in
             for channel in ym_channels {
                 let vc = YLTopicViewController()
